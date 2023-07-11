@@ -8,7 +8,7 @@ for i in range(int(n)):
         cnt += 1
         continue
     for x in range(len(a)-2):
-        if a[x] in a[x+2:]:
+        if a[x] in a[x+2:] and a[x+1] != a[x]:
             p += 1
     if p == 0:
         cnt += 1
